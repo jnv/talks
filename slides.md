@@ -24,7 +24,7 @@ npm i --save-dev jest
 
 ## Jmenné konvence
 
-- Adresář: `__test__`
+- Adresář: `__tests__`
 - Soubory: `*.test.js(x)`
 
 ----
