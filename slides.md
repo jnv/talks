@@ -65,6 +65,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 - Minimální konfigurace
   - Runner, assertions, mocking, snapshots <!-- .element: class="fragment" -->
 - Rychlost <!-- .element: class="fragment" -->
+- <!-- .element: class="fragment" --> [Přívětivost](https://itnext.io/reasons-to-love-jest-the-developer-experience-b00ec93df7bb)
 - Zpětná vazba <!-- .element: class="fragment" -->
 
 ---
@@ -103,6 +104,8 @@ describe('.sum', () => {
   })
 })
 ```
+
+<small>[Better Specs: Don't use should](http://www.betterspecs.org/#should)</small>
 
 ---
 
@@ -223,7 +226,7 @@ module.exports = () => 4
 
 ### [`jest.mock`](https://jestjs.io/docs/en/jest-object#jestmockmodulename-factory-options)
 
-- Standardní moduly <br> `jest.mock('path')` <!-- .element: class="fragment" -->
+- Standardní moduly <br> `jest.mock('fs')` <!-- .element: class="fragment" -->
 - In-line definice mocku <!-- .element: class="fragment" -->
 
 ---
@@ -336,7 +339,7 @@ Viz také
 
 ## Proč zvolit Jest?
 
-- 🤩 Rychlost a pohodlí <!-- .element: class="fragment li-emoji" -->
+- 🤩 Rychlost, pohodlí a přívětivost <!-- .element: class="fragment li-emoji" -->
 - 😊 React <!-- .element: class="fragment li-emoji" -->
 - 🙂 Preprocesory <!-- .element: class="fragment li-emoji" -->
 - 😏 jest-codemods <!-- .element: class="fragment li-emoji " -->
