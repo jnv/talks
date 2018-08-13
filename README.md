@@ -2,7 +2,7 @@
 
 Presentation about Jest given at Socialbakers.
 
-See [slides.md](slides.md) or [presentation](https://jnv.github.io/jest-demo/).
+See [slides.md](slides.md) or the  [presentation](https://jnv.github.io/talk-jest/).
 
 ## Running Examples
 

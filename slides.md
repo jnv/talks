@@ -2,6 +2,7 @@
 title: "Jest: Co možná neznáte"
 theme: night
 highlightTheme: tomorrow-night-bright
+css: custom.css
 revealOptions:
   transition: fade
   controls: false
@@ -33,7 +34,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 ## 2016
 
-> ...people working on Jest moved on to other projects within Facebook.
+> …people working on Jest moved on to other projects within Facebook.
 >
 > As engineers added more and more tests though, we noticed the performance of Jest wasn't going to scale.
 
@@ -51,7 +52,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 ----
 
-> Running our test suite with Mocha took 12+ minutes. In CI [...] we’re now able to run the entire Jest suite in 4 minutes 30 seconds.
+> Running our test suite with Mocha took 12+ minutes. In CI […] we’re now able to run the entire Jest suite in 4 minutes 30 seconds.
 
 <small>[Migrating from Mocha to Jest](https://medium.com/airbnb-engineering/unlocking-test-performance-migrating-from-mocha-to-jest-2796c508ec50)</small>
 
@@ -138,9 +139,7 @@ test.each`
 
 ---
 
-## Mockování funkcí
-
-<small>https://jestjs.io/docs/en/mock-functions</small>
+## [Mockování funkcí](https://jestjs.io/docs/en/mock-functions)
 
 ----
 
@@ -180,9 +179,7 @@ nowSpy.mockRestore()
 
 ---
 
-## Mockování modulů
-
-<small>https://jestjs.io/docs/en/manual-mocks</small>
+## [Mockování modulů](https://jestjs.io/docs/en/manual-mocks)
 
 ----
 
@@ -192,7 +189,7 @@ nowSpy.mockRestore()
 const randomNumber = require('random-number')
 
 exports.randomIndex = () => {
-  return `someIndex-${randomNumber()}`
+  return 'someIndex-' + randomNumber()
 }
 ```
 
@@ -232,15 +229,22 @@ module.exports = () => 4
 ---
 
 ```js
-jest.mock('../moduleName', () => {
+jest.mock('../module-name', () => {
   return jest.fn(() => 42)
 })
 
-const moduleName = require('../moduleName')
-moduleName()
+const moduleName = require('../module-name')
+moduleName() // => 42
 ```
 
-----
+---
+
+### Více mockování
+
+- [Fake timers](https://jestjs.io/docs/en/timer-mocks) (`setTimeout`, `setInterval`…)
+- [Automocking](https://jestjs.io/docs/en/configuration.html#automock-boolean)
+
+---
 
 ## ⚠️
 
@@ -316,12 +320,14 @@ Object {
 
 ### Snapshoty: Pro a proti
 
-- 👍 Snadná údržba a rychlá iterace <!-- .element: class="fragment" -->
-- 👍 Testování legacy kódu <!-- .element: class="fragment" -->
-- 👎 Křehkost při velkých změnách <!-- .element: class="fragment" -->
-- 👎 Není zřejmé, co je důležité <!-- .element: class="fragment" -->
+- 👍 Snadná údržba a rychlá iterace <!-- .element: class="fragment li-emoji" -->
+- 👍 Testování legacy kódu <!-- .element: class="fragment li-emoji" -->
+- 👎 Křehkost při velkých změnách <!-- .element: class="fragment li-emoji" -->
+- 👎 Není zřejmé, co je důležité <!-- .element: class="fragment li-emoji" -->
 
 ----
+
+Viz také
 
 - [Gold Master Testing](https://codeclimate.com/blog/gold-master-testing/)
 - [Guru Checks Output](http://wiki.c2.com/?GuruChecksOutput) (antipattern)
@@ -330,21 +336,24 @@ Object {
 
 ## Proč zvolit Jest?
 
-- 🤩 Rychlost a pohodlí <!-- .element: class="fragment" -->
-- 😊 React <!-- .element: class="fragment" -->
-- 🙂 Preprocesory <!-- .element: class="fragment" -->
-- 😏 jest-codemods <!-- .element: class="fragment" -->
+- 🤩 Rychlost a pohodlí <!-- .element: class="fragment li-emoji" -->
+- 😊 React <!-- .element: class="fragment li-emoji" -->
+- 🙂 Preprocesory <!-- .element: class="fragment li-emoji" -->
+- 😏 jest-codemods <!-- .element: class="fragment li-emoji " -->
 
 ---
 
 ## Proč nezvolit Jest?
 
-- 🤨 Snapshoty <!-- .element: class="fragment" -->
-- 😕 Přizpůsobitelnost <!-- .element: class="fragment" -->
-- 😤 Integrační testy <!-- .element: class="fragment" -->
-- 🤯 Komplexita <!-- .element: class="fragment" -->
+- 🤨 Snapshoty <!-- .element: class="fragment li-emoji" -->
+- 😕 Přizpůsobitelnost <!-- .element: class="fragment li-emoji" -->
+- 😤 Integrační testy <!-- .element: class="fragment li-emoji" -->
+- 🤯 Komplexita <!-- .element: class="fragment li-emoji" -->
 
 ---
+
+[github.com/jnv/talk-jest](https://github.com/jnv/talk-jest)
+
 
 <!--
 ## Snaphoty v Mocha / Chai
