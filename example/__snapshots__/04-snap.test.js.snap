@@ -2,6 +2,7 @@
 
 exports[`snapshot example 1`] = `
 Object {
+  "other": "stuff",
   "some": "object",
 }
 `;
