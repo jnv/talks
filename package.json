@@ -10,10 +10,10 @@
     "help": "mdx-deck"
   },
   "keywords": [],
-  "author": "Brent Jackson",
+  "author": "Jan Vlnas",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.7.7"
+    "mdx-deck": "^1.8.1"
   },
-  "name": "bakeryjs-workshop"
+  "name": "bakeryjs-workshop-slides"
 }
