@@ -312,6 +312,6 @@ if (R.isEmpty (xs)) {
 ## References
 
 - [ReactiveConf 2018 Talk](https://www.youtube.com/watch?v=a2astdDbOjk)
-  - Also LambdaConf: Part [1](https://www.youtube.com/watch?v=4WiNwODrYGI&t=32s), [2](https://www.youtube.com/watch?v=N1LsbfHpMRI&t=4s), [3](https://www.youtube.com/watch?v=3OwijRsWO4w)
+  - Also LambdaConf: Part [1](https://www.youtube.com/watch?v=4WiNwODrYGI), [2](https://www.youtube.com/watch?v=N1LsbfHpMRI), [3](https://www.youtube.com/watch?v=3OwijRsWO4w)
 - [Interview with D. Chambers](https://survivejs.com/blog/sanctuary-interview/)
 - [Functional Geekery ep. 31](https://www.functionalgeekery.com/episode-31-david-chambers/)
