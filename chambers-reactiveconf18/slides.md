@@ -11,7 +11,7 @@ revealOptions:
 ## Programming Safely in an Uncertain World
 ### David Chambers
 
-Shrnutí z ReactiveConf 2018<br>Tech Talks #10, 19. 2. 2019
+ReactiveConf Summary 2018<br>Tech Talks #10, 19. 2. 2019
 
 ---
 
@@ -216,6 +216,8 @@ S.pipe ([
 // Just (["28", "29", "2A"])
 ```
 
+<small>[`chain` docs](https://sanctuary.js.org/#chain)</small>
+
 ---
 
 ```js
@@ -238,6 +240,8 @@ S.pipe ([
 ]) ('{"x":{"y":{"z":["28","29","2A"]}}}')
 // Just ([40, 41, 42])
 ```
+
+<small>[`sequence` docs](https://sanctuary.js.org/#sequence)</small>
 
 ---
 
@@ -315,3 +319,4 @@ if (R.isEmpty (xs)) {
   - Also LambdaConf: Part [1](https://www.youtube.com/watch?v=4WiNwODrYGI), [2](https://www.youtube.com/watch?v=N1LsbfHpMRI), [3](https://www.youtube.com/watch?v=3OwijRsWO4w)
 - [Interview with D. Chambers](https://survivejs.com/blog/sanctuary-interview/)
 - [Functional Geekery ep. 31](https://www.functionalgeekery.com/episode-31-david-chambers/)
+- [Broken Promises – The unspoken flaws of JavaScript Promises](https://medium.com/@avaq/broken-promises-2ae92780f33)
