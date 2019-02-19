@@ -11,7 +11,7 @@ revealOptions:
 ## Programming Safely in an Uncertain World
 ### David Chambers
 
-ReactiveConf Summary 2018<br>Tech Talks #10, 19. 2. 2019
+ReactiveConf 2018 Summary<br>Tech Talks #10, 19. 2. 2019
 
 ---
 
