@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "start": "npx reveal-md -w slides.md",
-    "build": "npx reveal-md slides.md --static ../docs/chambers-reactiveconf18 --css custom.css --static-dirs=img",
+    "build": "npx reveal-md slides.md --static ../docs/chambers-reactiveconf18 --static-dirs=img",
     "test": "jest"
   },
   "author": "",
