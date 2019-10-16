@@ -1,0 +1,199 @@
+import { Head, Appear } from 'mdx-deck'
+export { default as theme } from './theme'
+
+<Head>
+  <title>Simplify your data processing with BakeryJS</title>
+</Head>
+
+# ![BakeryJS](logo.png)
+
+## ReactiveConf 2018
+
+---
+
+## Rules
+
+<ul>
+  <Appear>
+    <li>Just ask</li>
+    <li>We are here to help you</li>
+    <li>We want your feedback</li>
+  </Appear>
+</ul>
+
+
+---
+
+# What are we going to build?
+
+---
+
+## Agenda
+
+<ol>
+  <Appear>
+    <li>Introduction</li>
+    <li>BakeryJS Overview</li>
+    <li>Coding</li>
+    <li>Discussion</li>
+    <li>~ 3 hours total</li>
+  </Appear>
+</ol>
+
+---
+
+# WTF is BakeryJS?
+
+---
+
+Data processing.
+
+---
+
+# 😎
+
+I just need to fetch and transform some&nbsp;JSON.
+
+<!--
+```javascript
+fetch(url)
+  .then(res => res.json())
+  .then(transform)
+  .catch(logger.error)
+```
+-->
+
+---
+
+# 😕
+
+Now I need to fetch more data based on stuff I have.
+
+<!--
+```javascript
+fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    return Promise.all(data.url.map(url => fetch(url))
+  })
+  // ...more processing
+```
+-->
+
+---
+
+# 😒
+
+Well, I need additional data only in some cases.
+
+<!--
+```javascript
+fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    if (customer.moreData) {
+      return Promise.all(data.url.map(url => fetch(url))
+    }
+    return data
+  })
+  // ...more processing
+```
+-->
+
+---
+
+# 🤨
+
+I need to analyze batches of data.
+
+---
+
+# ☹️
+
+I need to enrich data with additional processing.
+
+---
+
+# 😣
+
+Now it is slow and I don't know why.
+
+---
+
+# 😫
+
+Something is broken and my service crashes.
+
+---
+
+# 🤬
+
+Great, it's all spaghetti code now.
+
+---
+
+# We can do better
+
+---
+
+Reusable boxes for data processing
+
+<center>
+<video src="bakeryjs-viz.mp4" muted autoPlay loop style={{maxHeight: '70vh'}}></video>
+</center>
+
+---
+
+# Prior art
+
+---
+
+Apache NiFi
+
+![](nifi.png)
+
+---
+
+Flow-Based Programming (J. P. Morrison)
+
+![](fbp.jpg)
+
+---
+
+NoFlo + Flowhub
+
+![](noflo.png)
+
+---
+
+# Related
+
+- Streams
+- Functional Reactive Programming
+- Observables (RxJS, Kefir, etc.)
+
+---
+
+# Why BakeryJS?
+
+<ul>
+<Appear>
+  <li>Code first (visualization later)</li>
+  <li>Works easily with existing code</li>
+  <li>No special deployment needs</li>
+  <li>Dynamic flows</li>
+  <li>Monitoring</li>
+</Appear>
+</ul>
+
+---
+
+# 👩‍💻
+
+Let's start hacking.
+
+---
+
+```
+git clone https://github.com/Socialbakers/bakeryjs-workshop.git
+```
