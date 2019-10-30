@@ -6,7 +6,7 @@ My talks and workshops in a single repo.
 
 ### 2018
 
-- [Testing With Jest](2018-sbks-jest/) – given @Socialbakers.
+- [Jest: Co možná neznáte](2018-sbks-jest/) (in Czech) – given @Socialbakers.
 - [BakeryJS Workshop](2018-workshop-bakeryjs/) – complementary slides to ReactiveConf 2018 workshop.
 - [Programming Safely in an Uncertain World by David Chambers](2018-sbks-reactiveconf-chambers/) – summary of ReactiveConf talk for @Socialbakers.
 
