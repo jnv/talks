@@ -1,6 +1,8 @@
 public/
+# Makefile default
 __export/
-
+# reveal-md default
+_static/
 ### Node ###
 # Logs
 logs

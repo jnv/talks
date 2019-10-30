@@ -1,8 +1,6 @@
 ---
 title: "Build a Website on a Headless CMS with Svelte"
 theme: white
-highlightTheme: vs
-css: custom.css
 revealOptions:
   transition: fade
   controls: false
@@ -346,7 +344,7 @@ export async function get(req, res, next) {
 #### File Naming Rules 1/2
 
 - `src/routes/index.svelte` → `/`
--  `src/routes/about.svelte` → `/about` 
+-  `src/routes/about.svelte` → `/about`
 - `src/routes/blog/index.svelte` → `/blog`
 
 &hellip;

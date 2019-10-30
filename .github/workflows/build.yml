@@ -20,7 +20,6 @@ jobs:
       - name: Setup gh-pages
         run: |
           cp README.md public/
-          touch public/.nojekyll
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.5.0
         env:
