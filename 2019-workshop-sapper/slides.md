@@ -27,6 +27,22 @@ What's the advantage of this approach?
 
 ---
 
+## Battle Plan
+
+1. Intro (👋 you are here)
+1. Svelte Crash Course
+1. Exploring Website Code + Tasks
+1. Sapper + Tasks
+1. Setting up CMS
+1. Deployment to ZEIT
+1. Your Turn
+
+---
+
+## Website Architecture
+
+---
+
 ### Traditional (Coupled) CMS
 
 ![](img/overview-1-coupled.svg)
@@ -79,9 +95,11 @@ Your website will have server-side part which provides static HTML on first load
 
 ---
 
-### Why Svelte?
+# Svelte Crash Course
 
 ----
+
+## Why Svelte?
 
 > The magical disappearing UI framework.
 
@@ -92,6 +110,9 @@ Your website will have server-side part which provides static HTML on first load
 > **what would it look like if we had a language for describing reactive user interfaces?**
 
 [Rich Harris: The truth about Svelte](https://gist.github.com/Rich-Harris/0f910048478c2a6505d1c32185b61934)
+
+Note:
+See also Elm
 
 ----
 
@@ -173,9 +194,8 @@ Take a look at:
 
 ## Take a look around
 
-----
-
-- `src/routes/index.svelte`
+- `src/routes/index.svelte` (`/`)
+- `src/routes/about.svelte` (`/about`)
 - `src/routes/_layout.svelte`
 - `src/components`
 
@@ -199,7 +219,7 @@ _Use `{#each}`_
 
 ### Fix "Find More" on About page
 
-_Use reactivity!_ ⚛️
+_Reactivity!_ ⚛️
 
 ---
 
@@ -218,7 +238,7 @@ _Use reactivity!_ ⚛️
 
 ---
 
-### Project Structure
+## Project Structure
 
 ```text
 ├ package.json
@@ -323,24 +343,25 @@ export async function get(req, res, next) {
 
 ---
 
-#### File Naming Rules
+#### File Naming Rules 1/2
 
 - `src/routes/index.svelte` → `/`
-- <!-- .element: class="fragment" -->
-  `src/routes/about.svelte` → `/about` 
-- <!-- .element: class="fragment" -->
-  `src/routes/blog/index.svelte` → `/blog`
-- <!-- .element: class="fragment" -->
-  `src/routes/_anything.svelte` → Nothing
-- <!-- .element: class="fragment" -->
-  `src/routes/_helpers/anything.svelte` → Nothing
-- <!-- .element: class="fragment" -->
-  `src/routes/blog/[slug].svelte` → `/blog/some-url-slug`
-- <!-- .element: class="fragment" -->
-  `src/routes/blog/[slug].json.js` → `/blog/some-url-slug.json` (server route)
+-  `src/routes/about.svelte` → `/about` 
+- `src/routes/blog/index.svelte` → `/blog`
+
+&hellip;
+
+----
+
+&hellip;
+
+- `src/routes/_anything.svelte` → Nothing
+- `src/routes/_helpers/anything.svelte` → Nothing
+- `src/routes/blog/[slug].svelte` → `/blog/some-url-slug`
+- `src/routes/blog/[slug].json.js` → `/blog/some-url-slug.json` (server route)
 ---
 
-## Task: Display menu on offer page!
+## Task: Display full menu on offer page!
 
 - Use `src/cms.js` module
 - You will need to process the data from CMS
@@ -351,9 +372,29 @@ export async function get(req, res, next) {
 
 [prismic.io](https://prismic.io/)
 
+----
+
+## Task: Setup CMS for our project
+
+- Setup custom types: `cms/types`
+- Add some content
+- Change `BASE_URL` in `cms.js`
+
 ---
 
-### Building & Exporting
+# Deploy to ZEIT
+
+[zeit.co](https://zeit.co/)
+
+----
+
+```console
+now deploy
+```
+
+---
+
+## Building & Exporting
 
 Commands:
 
@@ -362,18 +403,18 @@ Commands:
 - <!-- .element: class="fragment" -->
   `sapper export` → `__sapper__/export`
 
----
-
-# Deploying to ZEIT
-
-[zeit.co](https://zeit.co/)
 
 ---
 
-# Further Ideas
+# Your Turn!
 
+---
+
+## Ideas
+
+- Static export with GitHub Pages + Actions
 - Analytics
-- Detailed menu item listing
+- Individual page for each menu item
 - Image carousel driven by CMS
 - Editable content on home page
 - Booking: send e-mail upon form submission
