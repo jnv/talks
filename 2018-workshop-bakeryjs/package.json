@@ -13,7 +13,7 @@
   "author": "Jan Vlnas",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.8.1"
+    "mdx-deck": "^2"
   },
   "name": "bakeryjs-workshop-slides"
 }

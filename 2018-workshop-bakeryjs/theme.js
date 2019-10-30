@@ -1,5 +1,4 @@
 import { hack as theme } from 'mdx-deck/themes'
-import prismStyle from 'react-syntax-highlighter/styles/prism/funky'
 
 const fgColor = '#ffffff'
 
@@ -14,9 +13,6 @@ export default {
     code: '#000',
     codeBackground: fgColor,
   },
-  prism: {
-    style: prismStyle,
-  }
 
   // Customize your presentation theme here.
   //
