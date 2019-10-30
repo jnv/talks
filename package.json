@@ -1,0 +1,22 @@
+{
+  "name": "@jnv/talks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnv/talks.git"
+  },
+  "author": "Jan Vlnas",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jnv/talks/issues"
+  },
+  "homepage": "https://github.com/jnv/talks#readme",
+  "dependencies": {
+    "reveal-md": "^3.3.1"
+  }
+}

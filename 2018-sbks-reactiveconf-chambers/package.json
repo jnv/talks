@@ -5,8 +5,7 @@
   "description": "",
   "scripts": {
     "start": "npx reveal-md -w slides.md",
-    "build": "npx reveal-md slides.md --static ../docs/chambers-reactiveconf18 --static-dirs=img",
-    "test": "jest"
+    "build": "npx reveal-md slides.md --static-dirs=img --static"
   },
   "author": "",
   "license": "ISC",

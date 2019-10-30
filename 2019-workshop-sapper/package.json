@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "start": "npx reveal-md slides.md -w",
-    "build": "npx reveal-md slides.md --static docs --css custom.css --static-dirs=img"
+    "build": "npx reveal-md slides.md --css custom.css --static-dirs=img --static"
   },
   "author": "Jan Vlnas <jan.vlnas@socialbakers.com>",
   "license": "CC0-1.0",
