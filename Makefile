@@ -10,3 +10,6 @@ all: $(PUBLISH_DIR)
 
 $(PUBLISH_DIR):
 	mkdir $(PUBLISH_DIR)
+
+clean:
+	rm -rf $(PUBLISH_DIR)
