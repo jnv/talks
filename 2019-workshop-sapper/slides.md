@@ -27,7 +27,7 @@ What's the advantage of this approach?
 
 ## Battle Plan
 
-1. Intro (👋 you are here)
+1. Intro (👋 we are here)
 1. Svelte Crash Course
 1. Exploring Website Code + Tasks
 1. Sapper + Tasks
@@ -41,6 +41,7 @@ What's the advantage of this approach?
 
 - Testing
 - Static site hosting
+- Web Components & Custom Elements
 
 ---
 
@@ -120,7 +121,7 @@ Your website will have server-side part which provides static HTML on first load
 - 👍 Better performance <!-- .element: class="li-emoji" -->
 - 👎 You need a server component <!-- .element: class="li-emoji" -->
 
-----
+---
 
 In Particular…
 
@@ -158,11 +159,12 @@ In Particular…
 
 ## Pros
 
-- Single-file components
-- Less boilerplate
-- Low runtime overhead
-- No virtual DOM
-- Built-in reactivity, two-way binding, state management
+- Single-file components<!-- .element: class="fragment" -->
+- <!-- .element: class="fragment" -->
+  Less boilerplate (same functionality in React can be [3 times bigger](https://svelte.dev/blog/write-less-code))
+- Low runtime overhead<!-- .element: class="fragment" -->
+- No virtual DOM<!-- .element: class="fragment" -->
+- Built-in reactivity, two-way binding, state management<!-- .element: class="fragment" -->
 
 Note:
 - single-file components: very similar to Vue, but with even less boilerplate
@@ -488,11 +490,17 @@ Commands:
 
 ## Ideas
 
-- Analytics
-- Individual page for each menu item
-- Image carousel driven by CMS
-- Editable content on home page
-- Static hosting with Netlify
+- Analytics<!-- .element: class="fragment" -->
+- Individual page for each menu item<!-- .element: class="fragment" -->
+- Image carousel driven by CMS<!-- .element: class="fragment" -->
+- Editable content on home page<!-- .element: class="fragment" -->
+- Static hosting with Netlify<!-- .element: class="fragment" -->
+
+
+----
+
+## Further Ideas
+
 - Booking: send e-mail upon form submission
 - Offline Support, data update with service worker
 - Better page transitions
