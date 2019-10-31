@@ -148,7 +148,7 @@ In Particular…
 
 # Svelte Crash Course
 
-----
+---
 
 ## Why Svelte?
 
