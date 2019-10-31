@@ -35,15 +35,25 @@ What's the advantage of this approach?
 1. Deployment to ZEIT
 1. Your Turn
 
+----
+
+### What's Not Covered
+
+- Testing
+- Static site hosting
+
 ---
 
-## Website Architecture
+## Architecture Overview
+
+Traditional vs. Headless CMS
 
 ---
 
-### Traditional (Coupled) CMS
 
-![](img/overview-1-coupled.svg)
+![](img/1.svg) <!-- .element: class="full-height" -->
+
+Traditional (coupled) CMS
 
 Note:
 Let's do first a quick recap how we can approach website content management.
@@ -56,32 +66,75 @@ For smaller sites where only some content needs to be editable it's an overkill.
 
 ----
 
-### Headless CMS + Client-Side Rendering
+### Traditional (coupled) CMS
 
-![](img/overview-2-csr.svg)
+- Administration + front-end
+- Server-side rendering
+- JS sprinkled on top
+- Content coupled with theming
+
+---
+
+
+### Headless CMS
+
+- CMS provides administration + API
+- Front-end pulls content from API
+- Complete control over front-end
 
 Note:
 With decoupled or "headless" CMS approach, your interaction with CMS is limited to API. CMS provides you with content editor, but how you display the content to users is completely under your control.
+
+---
+
+
+![](img/2.svg) <!-- .element: class="full-height" -->
+
+Headless CMS + Client-side Rendering
+
+Note:
 The easiest way how to take advantage of headless CMS is to roll some client-side JS application, which directly fetches data from API. You can use static hosting for that.
 While this is great for prototyping and web applications, it's not great for _websites_, because users need to wait for JavaScript to load before they see the content. This also renders your site invisible for some search engines and browsers.
 
 ----
 
+### Headless CMS + Client-side Rendering
 
-### Headless CMS + Universal Rendering
+- 👍 Easy static hosting <!-- .element: class="li-emoji" -->
+- 👎 Bad for users and SEO <!-- .element: class="li-emoji" -->
 
-![](img/overview-3-ur.svg)
+---
+
+![](img/3.svg) <!-- .element: class="full-height" -->
+
+Headless CMS + Universal Rendering
 
 Note:
 So what we will do today is that we will combine client-side application with server-side rendering, this is also called "universal" or "isomorphic" rendering.
 Your website will have server-side part which provides static HTML on first load and client-side part which takes over the rendering as user browses the website. This can be also leveraged to support offline capabilities.
 
+----
+
+### Headless CMS + Universal Rendering
+
+- 👍 Better performance <!-- .element: class="li-emoji" -->
+- 👎 You need a server component <!-- .element: class="li-emoji" -->
 
 ----
 
-### In Particular…
+In Particular…
 
-![](img/overview-4.svg)
+![](img/4.svg) <!-- .element: class="full-height" -->
+
+
+----
+
+### In Particular
+
+- Prismic for headless CMS
+- ZEIT for hosting
+- Svelte for front-end components
+- Sapper for server-side functionality
 
 ---
 
@@ -103,17 +156,6 @@ Your website will have server-side part which provides static HTML on first load
 
 ----
 
-> Svelte is a language.
-> Specifically, Svelte is an attempt to answer a question[…]:
-> **what would it look like if we had a language for describing reactive user interfaces?**
-
-[Rich Harris: The truth about Svelte](https://gist.github.com/Rich-Harris/0f910048478c2a6505d1c32185b61934)
-
-Note:
-See also Elm
-
-----
-
 ## Pros
 
 - Single-file components
@@ -127,6 +169,17 @@ Note:
 - Svelte doesn't have runtime library like React or Vue which is responsible for the whole lifecycle of the application, instead components are compiled into "vanilla JS" where components have all required functionality built-in
 - no virtual DOM: VDOM diffing is used to minimize updates to real DOM; Svelte finds out during compilation what parts of DOM can change and can "surgically" update only relevant parts of DOM
 - reactivity and two-way binding is compiled in, so there's no overhead if you don't use these features
+
+---
+
+> Svelte is a language.
+> Specifically, Svelte is an attempt to answer a question[…]:
+> **what would it look like if we had a language for describing reactive user interfaces?**
+
+[Rich Harris: The truth about Svelte](https://gist.github.com/Rich-Harris/0f910048478c2a6505d1c32185b61934)
+
+Note:
+See also Elm
 
 ---
 
@@ -179,6 +232,28 @@ Take a look at:
 
 ---
 
+### Slots (aka Child Components)
+
+----
+
+```html
+<!-- Box.svelte -->
+<div class="box">
+	<slot></slot>
+</div>
+```
+
+```html
+<!-- App.svelte -->
+<Box>
+	<p>This goes to slot!</p>
+</Box>
+```
+
+[Repl](https://svelte.dev/repl/e2a2a1875fcf4338865fc9cef39f70d6?version=3.12.1)
+
+---
+
 ## Your Turn!
 
 1. Go to **[is.gd/sapperws](https://is.gd/sapperws)**
@@ -186,7 +261,6 @@ Take a look at:
 1. Clone it
 1. `npm i`
 1. `npm run dev`
-
 
 ----
 
@@ -410,11 +484,11 @@ Commands:
 
 ## Ideas
 
-- Static export with GitHub Pages + Actions
 - Analytics
 - Individual page for each menu item
 - Image carousel driven by CMS
 - Editable content on home page
+- Static hosting with Netlify
 - Booking: send e-mail upon form submission
 - Offline Support, data update with service worker
 - Better page transitions

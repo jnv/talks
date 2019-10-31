@@ -1,7 +1,14 @@
 .li-emoji {
-    list-style: none;
+  list-style: none;
 }
 
 .reveal section img {
-    border: none;
+  border: none;
+  box-shadow: none;
+}
+
+
+.full-height {
+  width: auto;
+  height: 60vh;
 }
