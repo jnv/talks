@@ -275,7 +275,7 @@ Take a look at:
 
 ## Tasks
 
-Protip: [svelte.dev](https://svelte.dev/)
+Use The Docs: [svelte.dev](https://svelte.dev/)
 
 ----
 
@@ -287,11 +287,15 @@ Protip: [svelte.dev](https://svelte.dev/)
 
 _Use `{#each}`_
 
+[Repl](https://svelte.dev/repl/49395cb154fa49a09ec92daa50d56ae3?version=3.12.1)
+
 ----
 
 ### Fix "Find More" on About page
 
 _Reactivity!_ ⚛️
+
+[Repl](https://svelte.dev/repl/22109b3a46404727a9207411ae83d705?version=3.12.1)
 
 ---
 
@@ -341,7 +345,7 @@ Note:
 
 ---
 
-#### Static Pages
+#### Static Route
 
 `src/routes/about.svelte` → `/about`
 
@@ -356,7 +360,7 @@ Note:
 
 ---
 
-#### Dynamic Routing
+#### Dynamic Route
 
 - `/blog/my-blogpost-title`
 - <!-- .element: class="fragment" -->
