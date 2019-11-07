@@ -213,7 +213,14 @@ __SCRIPT_END__
 ```
 
 [Repl](https://svelte.dev/repl/e2a2a1875fcf4338865fc9cef39f70d6?version=3.12.1)
-</script></section></section><section ><section data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
+## Svelte Cons?
+
+- Pretty new (2016)<!-- .element: class="fragment" -->
+- Requires build step<!-- .element: class="fragment" -->
+- Lack of tooling<!-- .element: class="fragment" -->
+- Doesn't get rid of JS<!-- .element: class="fragment" -->
+</script></section><section ><section data-markdown><script type="text/template">
 ## Your Turn!
 
 1. Go to **[is.gd/sapperws](https://is.gd/sapperws)**
@@ -247,13 +254,6 @@ _Reactivity!_ ⚛️
 
 [Repl](https://svelte.dev/repl/22109b3a46404727a9207411ae83d705?version=3.12.1)
 </script></section></section><section  data-markdown><script type="text/template">
-## Svelte Cons?
-
-- Pretty new (2016)<!-- .element: class="fragment" -->
-- Requires build step<!-- .element: class="fragment" -->
-- Lack of tooling<!-- .element: class="fragment" -->
-- Doesn't get rid of JS<!-- .element: class="fragment" -->
-</script></section><section  data-markdown><script type="text/template">
 # Sapper
 
 > The next small thing in web development
@@ -379,19 +379,17 @@ export async function get(req, res, next) {
 </script></section><section data-markdown><script type="text/template">
 ## Task: Setup CMS for our project
 
-- Setup custom types: `cms/types`
+- Setup custom repeatable types (paste JSON contents from `cms/types`)
 - Add some content
 - Change `BASE_URL` in `cms.js`
-</script></section></section><section ><section data-markdown><script type="text/template">
-# Deploy to ZEIT
+</script></section></section><section  data-markdown><script type="text/template">
+# Deploy to [ZEIT.co](https://zeit.co/)
 
-[zeit.co](https://zeit.co/)
-</script></section><section data-markdown><script type="text/template">
 ```console
 now deploy
 ```
-</script></section></section><section  data-markdown><script type="text/template">
-## Building & Exporting
+</script></section><section  data-markdown><script type="text/template">
+# Building & Exporting
 
 Commands:
 
@@ -400,9 +398,9 @@ Commands:
 - <!-- .element: class="fragment" -->
   `sapper export` → `__sapper__/export`
 
-</script></section><section  data-markdown><script type="text/template">
-# Your Turn!
 </script></section><section ><section data-markdown><script type="text/template">
+# Your Turn!
+</script></section><section data-markdown><script type="text/template">
 ## Ideas
 
 - Analytics<!-- .element: class="fragment" -->
@@ -418,6 +416,35 @@ Commands:
 - Offline Support, data update with service worker
 - Better page transitions
 - Data fetching with GraphQL
+</script></section></section><section  data-markdown><script type="text/template">
+# Additional Resources
+</script></section><section  data-markdown><script type="text/template">
+## Svelte
+
+- [Blog](https://svelte.dev/blog)
+- [Discord Chat](https://svelte.dev/chat)
+- [awesome-svelte-resources](https://github.com/ryanatkn/awesome-svelte-resources)
+</script></section><section  data-markdown><script type="text/template">
+## Alternatives & Comparisons
+
+- [js-framework-benchmark](https://github.com/krausest/js-framework-benchmark) ([snapshot](https://krausest.github.io/js-framework-benchmark/current.html))
+- [JavaScript UI Compilers: Comparing Svelte and&nbsp;Solid](https://medium.com/@ryansolid/javascript-ui-compilers-comparing-svelte-and-solid-cbcba2120cea)
+</script></section><section ><section data-markdown><script type="text/template">
+## More Headless CMSes
+
+See also [awesome-cms](https://github.com/postlight/awesome-cms)
+</script></section><section data-markdown><script type="text/template">
+### Hosted
+
+- [Kentico Kontent](https://kontent.ai/)
+- [Contentful](https://www.contentful.com/)
+- [ButterCMS](https://buttercms.com/)
+</script></section><section data-markdown><script type="text/template">
+### Open-Source
+
+- [Strapi](https://strapi.io/)
+- [JAMstack CMS](https://github.com/jamstack-cms/jamstack-cms)
+- [Webiny CMS](https://www.webiny.com/serverless-app/headless-cms) (coming soon)
 </script></section></section></div>
     </div>
 
