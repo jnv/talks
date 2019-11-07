@@ -256,6 +256,15 @@ Take a look at:
 
 ---
 
+## Svelte Cons?
+
+- Pretty new (2016)<!-- .element: class="fragment" -->
+- Requires build step<!-- .element: class="fragment" -->
+- Lack of tooling<!-- .element: class="fragment" -->
+- Doesn't get rid of JS<!-- .element: class="fragment" -->
+
+---
+
 ## Your Turn!
 
 1. Go to **[is.gd/sapperws](https://is.gd/sapperws)**
@@ -298,15 +307,6 @@ _Use `{#each}`_
 _Reactivity!_ ⚛️
 
 [Repl](https://svelte.dev/repl/22109b3a46404727a9207411ae83d705?version=3.12.1)
-
----
-
-## Svelte Cons?
-
-- Pretty new (2016)<!-- .element: class="fragment" -->
-- Requires build step<!-- .element: class="fragment" -->
-- Lack of tooling<!-- .element: class="fragment" -->
-- Doesn't get rid of JS<!-- .element: class="fragment" -->
 
 ---
 
@@ -454,17 +454,13 @@ export async function get(req, res, next) {
 
 ## Task: Setup CMS for our project
 
-- Setup custom types: `cms/types`
+- Setup custom repeatable types (paste JSON contents from `cms/types`)
 - Add some content
 - Change `BASE_URL` in `cms.js`
 
 ---
 
-# Deploy to ZEIT
-
-[zeit.co](https://zeit.co/)
-
-----
+# Deploy to [ZEIT.co](https://zeit.co/)
 
 ```console
 now deploy
@@ -472,7 +468,7 @@ now deploy
 
 ---
 
-## Building & Exporting
+# Building & Exporting
 
 Commands:
 
@@ -486,7 +482,7 @@ Commands:
 
 # Your Turn!
 
----
+----
 
 ## Ideas
 
@@ -505,3 +501,44 @@ Commands:
 - Offline Support, data update with service worker
 - Better page transitions
 - Data fetching with GraphQL
+
+---
+
+# Additional Resources
+
+---
+
+## Svelte
+
+- [Blog](https://svelte.dev/blog)
+- [Discord Chat](https://svelte.dev/chat)
+- [awesome-svelte-resources](https://github.com/ryanatkn/awesome-svelte-resources)
+
+---
+
+## Alternatives & Comparisons
+
+- [js-framework-benchmark](https://github.com/krausest/js-framework-benchmark) ([snapshot](https://krausest.github.io/js-framework-benchmark/current.html))
+- [JavaScript UI Compilers: Comparing Svelte and&nbsp;Solid](https://medium.com/@ryansolid/javascript-ui-compilers-comparing-svelte-and-solid-cbcba2120cea)
+
+---
+
+## More Headless CMSes
+
+See also [awesome-cms](https://github.com/postlight/awesome-cms)
+
+----
+
+### Hosted
+
+- [Kentico Kontent](https://kontent.ai/)
+- [Contentful](https://www.contentful.com/)
+- [ButterCMS](https://buttercms.com/)
+
+----
+
+### Open-Source
+
+- [Strapi](https://strapi.io/)
+- [JAMstack CMS](https://github.com/jamstack-cms/jamstack-cms)
+- [Webiny CMS](https://www.webiny.com/serverless-app/headless-cms) (coming soon)
