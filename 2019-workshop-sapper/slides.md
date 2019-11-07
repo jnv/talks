@@ -2,8 +2,7 @@
 title: "Build a Website on a Headless CMS with Svelte"
 theme: white
 revealOptions:
-  transition: fade
-  controls: false
+  controls: true
 ---
 
 # Svelte & Sapper
@@ -533,6 +532,7 @@ See also [awesome-cms](https://github.com/postlight/awesome-cms)
 
 - [Kentico Kontent](https://kontent.ai/)
 - [Contentful](https://www.contentful.com/)
+- [Craft CMS](https://craftcms.com/)
 - [ButterCMS](https://buttercms.com/)
 
 ----
