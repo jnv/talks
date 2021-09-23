@@ -13,3 +13,7 @@ My talks and workshops in a single repo.
 ### 2019
 
 - [Svelte + Sapper Workshop](2019-workshop-sapper/) – complementary slides to ReactiveConf 2019 workshop.
+
+### 2021
+
+- [Unsuck APIs With Superface](2021-09-unsuck-apis/)
