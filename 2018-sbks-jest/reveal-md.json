@@ -1,0 +1,6 @@
+{
+  "theme": "night",
+  "highlightTheme": "tomorrow-night-bright",
+  "css": ["custom.css"],
+  "staticDirs": ["img"]
+}

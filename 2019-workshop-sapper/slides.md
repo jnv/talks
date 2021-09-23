@@ -34,7 +34,7 @@ What's the advantage of this approach?
 1. Deployment to ZEIT
 1. Your Turn
 
-----
+---
 
 ### What's Not Covered
 
@@ -50,7 +50,6 @@ Traditional vs. Headless CMS
 
 ---
 
-
 ![](img/1.svg) <!-- .element: class="full-height" -->
 
 Traditional (coupled) CMS
@@ -59,12 +58,13 @@ Note:
 Let's do first a quick recap how we can approach website content management.
 The traditional approach which Adam likes to pick on is to have coupled CMS. Your CMS of choice, like WordPress, provides you with both administration interface and theming capabilities.
 This approach is very proven by time, but it has some drawbacks:
+
 - your content is mostly tied to the theming,
 - you need to learn PHP and CMS's specific API,
 - CMS needs to be maintained to avoid security issues.
-For smaller sites where only some content needs to be editable it's an overkill. If you need some static content which is designed and not easily editable, you either end up bending CMS editor or hacking the static content into the theme.
+  For smaller sites where only some content needs to be editable it's an overkill. If you need some static content which is designed and not easily editable, you either end up bending CMS editor or hacking the static content into the theme.
 
-----
+---
 
 ### Traditional (coupled) CMS
 
@@ -74,7 +74,6 @@ For smaller sites where only some content needs to be editable it's an overkill.
 - Content coupled with theming
 
 ---
-
 
 ### Headless CMS
 
@@ -87,7 +86,6 @@ With decoupled or "headless" CMS approach, your interaction with CMS is limited 
 
 ---
 
-
 ![](img/2.svg) <!-- .element: class="full-height" -->
 
 Headless CMS + Client-side Rendering
@@ -96,7 +94,7 @@ Note:
 The easiest way how to take advantage of headless CMS is to roll some client-side JS application, which directly fetches data from API. You can use static hosting for that.
 While this is great for prototyping and web applications, it's not great for _websites_, because users need to wait for JavaScript to load before they see the content. This also renders your site invisible for some search engines and browsers.
 
-----
+---
 
 ### Headless CMS + Client-side Rendering
 
@@ -113,7 +111,7 @@ Note:
 So what we will do today is that we will combine client-side application with server-side rendering, this is also called "universal" or "isomorphic" rendering.
 Your website will have server-side part which provides static HTML on first load and client-side part which takes over the rendering as user browses the website. This can be also leveraged to support offline capabilities.
 
-----
+---
 
 ### Headless CMS + Universal Rendering
 
@@ -126,8 +124,7 @@ In Particular…
 
 ![](img/4.svg) <!-- .element: class="full-height" -->
 
-
-----
+---
 
 ### In Particular
 
@@ -139,7 +136,7 @@ In Particular…
 ---
 
 | UI Library | App Framework |
-|------------|---------------|
+| ---------- | ------------- |
 | Svelte     | Sapper        |
 | React      | Next.js       |
 | Vue.js     | Nuxt.js       |
@@ -154,7 +151,7 @@ In Particular…
 
 > The magical disappearing UI framework.
 
-----
+---
 
 ## Pros
 
@@ -166,6 +163,7 @@ In Particular…
 - Built-in reactivity, two-way binding, state management<!-- .element: class="fragment" -->
 
 Note:
+
 - single-file components: very similar to Vue, but with even less boilerplate
 - Svelte doesn't have runtime library like React or Vue which is responsible for the whole lifecycle of the application, instead components are compiled into "vanilla JS" where components have all required functionality built-in
 - no virtual DOM: VDOM diffing is used to minimize updates to real DOM; Svelte finds out during compilation what parts of DOM can change and can "surgically" update only relevant parts of DOM
@@ -188,19 +186,19 @@ See also Elm
 
 The Hello World component
 
-----
+---
 
 ```html
 <script>
-	let name = 'world';
+  let name = "world";
 </script>
 
 <style>
-	h1 {
-		color: purple;
-		font-family: 'Comic Sans MS';
-		font-size: 2em;
-	}
+  h1 {
+    color: purple;
+    font-family: "Comic Sans MS";
+    font-size: 2em;
+  }
 </style>
 
 <h1>Hello {name}!</h1>
@@ -210,18 +208,19 @@ The Hello World component
 
 Note:
 Take a look at:
+
 - generated JS (note `svelte/internal`)
 - scoped styles
 
-----
+---
 
 ### Component With Props
 
-----
+---
 
 ```html
 <script>
-	export let name = 'World';
+  export let name = "World";
 </script>
 ```
 
@@ -235,19 +234,19 @@ Take a look at:
 
 ### Slots (aka Child Components)
 
-----
+---
 
 ```html
 <!-- Box.svelte -->
 <div class="box">
-	<slot></slot>
+  <slot></slot>
 </div>
 ```
 
 ```html
 <!-- App.svelte -->
 <Box>
-	<p>This goes to slot!</p>
+  <p>This goes to slot!</p>
 </Box>
 ```
 
@@ -272,7 +271,7 @@ Take a look at:
 1. `npm i`
 1. `npm run dev`
 
-----
+---
 
 ## Take a look around
 
@@ -287,11 +286,11 @@ Take a look at:
 
 Use The Docs: [svelte.dev](https://svelte.dev/)
 
-----
+---
 
 ### Fix `HeroBanner`
 
-----
+---
 
 ### Display all icons in `SocialMedia`
 
@@ -299,7 +298,7 @@ _Use `{#each}`_
 
 [Repl](https://svelte.dev/repl/49395cb154fa49a09ec92daa50d56ae3?version=3.12.1)
 
-----
+---
 
 ### Fix "Find More" on About page
 
@@ -335,6 +334,7 @@ _Reactivity!_ ⚛️
 ```
 
 Note:
+
 - src: 3 entry points: `src/client.js`, `src/server.js` and (optionally) `src/service-worker.js`
   - client.js: Boots up client-side application
   - server.js: HTTP server, e.g. Express or Polka
@@ -352,7 +352,7 @@ Note:
 
 ```html
 <svelte:head>
-	<title>About</title>
+  <title>About</title>
 </svelte:head>
 
 <h1>About this site</h1>
@@ -369,7 +369,6 @@ Note:
 - <!-- .element: class="fragment" -->
   `src/routes/blog/[slug].svelte`
 
-
 ---
 
 #### Client-side Part
@@ -377,24 +376,22 @@ Note:
 ```html
 <!-- src/routes/blog/[slug].svelte -->
 <script context="module">
-	export async function preload(page, session) {
-		const { slug } = page.params;
+  export async function preload(page, session) {
+    const { slug } = page.params;
 
-		const res = await this.fetch(`blog/${slug}.json`);
-		const article = await res.json();
+    const res = await this.fetch(`blog/${slug}.json`);
+    const article = await res.json();
 
-		return { article };
-	}
+    return { article };
+  }
 </script>
 
 <script>
-	export let article;
+  export let article;
 </script>
 
 <h1>{article.title}</h1>
-<div class="content">
-	{@html article.content}
-</div>
+<div class="content">{@html article.content}</div>
 ```
 
 ---
@@ -404,17 +401,17 @@ Note:
 ```js
 // routes/blog/[slug].json.js
 export async function get(req, res, next) {
-	const { slug } = req.params;
+  const { slug } = req.params;
 
-	// Somehow fetch the article
-	const article = await db.get(slug);
+  // Somehow fetch the article
+  const article = await db.get(slug);
 
-	if (article !== null) {
-		res.setHeader('Content-Type', 'application/json');
-		res.end(JSON.stringify(article));
-	} else {
-		next();
-	}
+  if (article !== null) {
+    res.setHeader("Content-Type", "application/json");
+    res.end(JSON.stringify(article));
+  } else {
+    next();
+  }
 }
 ```
 
@@ -423,12 +420,12 @@ export async function get(req, res, next) {
 #### File Naming Rules 1/2
 
 - `src/routes/index.svelte` → `/`
--  `src/routes/about.svelte` → `/about`
+- `src/routes/about.svelte` → `/about`
 - `src/routes/blog/index.svelte` → `/blog`
 
 &hellip;
 
-----
+---
 
 &hellip;
 
@@ -436,6 +433,7 @@ export async function get(req, res, next) {
 - `src/routes/_helpers/anything.svelte` → Nothing
 - `src/routes/blog/[slug].svelte` → `/blog/some-url-slug`
 - `src/routes/blog/[slug].json.js` → `/blog/some-url-slug.json` (server route)
+
 ---
 
 ## Task: Display full menu on offer page!
@@ -449,7 +447,7 @@ export async function get(req, res, next) {
 
 [prismic.io](https://prismic.io/)
 
-----
+---
 
 ## Task: Setup CMS for our project
 
@@ -476,12 +474,11 @@ Commands:
 - <!-- .element: class="fragment" -->
   `sapper export` → `__sapper__/export`
 
-
 ---
 
 # Your Turn!
 
-----
+---
 
 ## Ideas
 
@@ -491,8 +488,7 @@ Commands:
 - Editable content on home page<!-- .element: class="fragment" -->
 - Static hosting with Netlify<!-- .element: class="fragment" -->
 
-
-----
+---
 
 ## Further Ideas
 
@@ -526,7 +522,7 @@ Commands:
 
 See also [awesome-cms](https://github.com/postlight/awesome-cms)
 
-----
+---
 
 ### Hosted
 
@@ -535,7 +531,7 @@ See also [awesome-cms](https://github.com/postlight/awesome-cms)
 - [Craft CMS](https://craftcms.com/)
 - [ButterCMS](https://buttercms.com/)
 
-----
+---
 
 ### Open-Source
 

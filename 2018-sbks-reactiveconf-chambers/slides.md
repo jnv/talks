@@ -2,13 +2,13 @@
 title: "ReactiveConf 2018: Programming Safely in an Uncertain World"
 theme: night
 highlightTheme: tomorrow-night-bright
-css: custom.css
 revealOptions:
   transition: fade
   controls: false
 ---
 
 ## Programming Safely in an Uncertain World
+
 ### David Chambers
 
 ReactiveConf 2018 Summary<br>Jan Vlnas, Tech Talks #10, 19. 2. 2019
@@ -41,30 +41,30 @@ ReactiveConf 2018 Summary<br>Jan Vlnas, Tech Talks #10, 19. 2. 2019
 ---
 
 ```js
-const S = require ('sanctuary')
+const S = require("sanctuary");
 
-S.parseInt
+S.parseInt;
 // parseInt :: Radix -> String -> Maybe Integer
 ```
 
 ```js
-S.parseInt (16) ('0xFFFF')
+S.parseInt(16)("0xFFFF");
 // Just (65535)
 ```
-<!-- .element: class="fragment" -->
 
+<!-- .element: class="fragment" -->
 
 ```js
-S.parseInt (16) ('Prague')
+S.parseInt(16)("Prague");
 // Nothing
 ```
-<!-- .element: class="fragment" -->
 
+<!-- .element: class="fragment" -->
 
 ---
 
 ```js
-S.parseInt(16, '0xFFFF')
+S.parseInt(16, "0xFFFF");
 ```
 
 ```txt
@@ -74,13 +74,14 @@ parseInt :: Radix -> String -> Maybe Integer
             ^^^^^
               1
 ```
+
 <!-- .element: class="fragment" -->
 
 ---
 
 ```js
-const parseHex = S.parseInt(16)
-parseHex('0xFF')
+const parseHex = S.parseInt(16);
+parseHex("0xFF");
 // Just (255)
 ```
 
@@ -93,34 +94,36 @@ The Maybe type represents optional values: a value of type `Maybe a` is either `
 ---
 
 ```js
-S.head ([])
+S.head([]);
 // Nothing
 ```
 
 ```js
-S.head ([1, 2, 3])
+S.head([1, 2, 3]);
 // Just (1)
 ```
-<!-- .element: class="fragment" -->
 
+<!-- .element: class="fragment" -->
 
 ---
 
 ```js
-S.map (S.sub(1)) ([1, 2, 3])
+S.map(S.sub(1))([1, 2, 3]);
 // [ 0, 1, 2 ]
 ```
 
 ```js
-S.map (S.sub(1)) (S.Just (100))
+S.map(S.sub(1))(S.Just(100));
 // Just (99)
 ```
+
 <!-- .element: class="fragment" -->
 
 ```js
-S.map (S.sub(1)) (S.Nothing)
+S.map(S.sub(1))(S.Nothing);
 // Nothing
 ```
+
 <!-- .element: class="fragment" -->
 
 ---
@@ -132,12 +135,9 @@ S.map (S.sub(1)) (S.Nothing)
 ---
 
 ```js
-S.pipe ([
-    S.words,
-    S.map (S.prop ('length')),
-    S.map (Math.sqrt),
-    S.sum,
-]) ('I love Sanctuary')
+S.pipe([S.words, S.map(S.prop("length")), S.map(Math.sqrt), S.sum])(
+  "I love Sanctuary"
+);
 // 6
 ```
 
@@ -148,47 +148,50 @@ S.pipe ([
 ---
 
 ```js
-S.parseJson
+S.parseJson;
 // parseJson :: (Any -> Boolean) -> String -> Maybe a
 ```
 
 ```js
-S.parseJson (_ => true) ('[1,2')
+S.parseJson((_) => true)("[1,2");
 // Nothing
 ```
+
 <!-- .element: class="fragment" -->
 
-
 ```js
-S.parseJson (_ => true) ('[1,2,3]')
+S.parseJson((_) => true)("[1,2,3]");
 // Just ([1, 2, 3])
 ```
+
 <!-- .element: class="fragment" -->
 
 ---
 
 ```js
-const $ = require ('sanctuary-def')
-S.is ($.Array ($.Integer)) ([12, 34])
+const $ = require("sanctuary-def");
+S.is($.Array($.Integer))([12, 34]);
 // true
 ```
 
 ```js
-S.parseJson (S.is ($.Array ($.Integer))) ('[1,2,3]')
+S.parseJson(S.is($.Array($.Integer)))("[1,2,3]");
 // Just ([1, 2, 3])
 ```
+
 <!-- .element: class="fragment" -->
 
 ```js
-S.parseJson (S.is ($.Array ($.Integer))) ('["1","2"]')
+S.parseJson(S.is($.Array($.Integer)))('["1","2"]');
 // Nothing
 ```
+
 <!-- .element: class="fragment" -->
 
 ---
 
 ```json
-{"x":{"y":{"z":["28","29","2A"]}}}
+{ "x": { "y": { "z": ["28", "29", "2A"] } } }
 ```
 
 1. Parse JSON
@@ -199,20 +202,16 @@ S.parseJson (S.is ($.Array ($.Integer))) ('["1","2"]')
 ---
 
 ```js
-const f = s =>
-    JSON.parse(s).x.y.z.reduce(
-        (n, s) => n + parseInt(s, 16),
-        0
-    )
+const f = (s) => JSON.parse(s).x.y.z.reduce((n, s) => n + parseInt(s, 16), 0);
 ```
 
 ---
 
 ```js
-S.pipe ([
-    S.parseJson (_ => true),
-    S.chain (S.gets (_ => true) (['x', 'y', 'z'])),
-]) ('{"x":{"y":{"z":["28","29","2A"]}}}')
+S.pipe([
+  S.parseJson((_) => true),
+  S.chain(S.gets((_) => true)(["x", "y", "z"])),
+])('{"x":{"y":{"z":["28","29","2A"]}}}');
 // Just (["28", "29", "2A"])
 ```
 
@@ -221,23 +220,23 @@ S.pipe ([
 ---
 
 ```js
-S.pipe ([
-    S.parseJson (_ => true),
-    S.chain (S.gets (_ => true) (['x', 'y', 'z'])),
-    S.map (S.map (S.parseInt (16))),
-]) ('{"x":{"y":{"z":["28","29","2A"]}}}')
+S.pipe([
+  S.parseJson((_) => true),
+  S.chain(S.gets((_) => true)(["x", "y", "z"])),
+  S.map(S.map(S.parseInt(16))),
+])('{"x":{"y":{"z":["28","29","2A"]}}}');
 // Just ([Just (40), Just (41), Just (42)])
 ```
 
 ---
 
 ```js
-S.pipe ([
-    S.parseJson (_ => true),
-    S.chain (S.gets (_ => true) (['x', 'y', 'z'])),
-    S.map (S.map (S.parseInt (16))),
-    S.chain (S.sequence (S.Maybe)),
-]) ('{"x":{"y":{"z":["28","29","2A"]}}}')
+S.pipe([
+  S.parseJson((_) => true),
+  S.chain(S.gets((_) => true)(["x", "y", "z"])),
+  S.map(S.map(S.parseInt(16))),
+  S.chain(S.sequence(S.Maybe)),
+])('{"x":{"y":{"z":["28","29","2A"]}}}');
 // Just ([40, 41, 42])
 ```
 
@@ -246,29 +245,29 @@ S.pipe ([
 ---
 
 ```js
-S.pipe ([
-    S.parseJson (_ => true),
-    S.chain (S.gets (_ => true) (['x', 'y', 'z'])),
-    S.map (S.map (S.parseInt (16))),
-    S.chain (S.sequence (S.Maybe)),
-    S.map (S.sum),
-]) ('{"x":{"y":{"z":["28","29","2A"]}}}')
+S.pipe([
+  S.parseJson((_) => true),
+  S.chain(S.gets((_) => true)(["x", "y", "z"])),
+  S.map(S.map(S.parseInt(16))),
+  S.chain(S.sequence(S.Maybe)),
+  S.map(S.sum),
+])('{"x":{"y":{"z":["28","29","2A"]}}}');
 // Just (123)
 ```
 
 ---
 
 ```js
-S.pipe ([
-    S.parseJson (_ => true),
-    S.chain (S.gets (S.is ($.Array ($.String)))
-                    (['x', 'y', 'z'])),
-    S.map (S.map (S.parseInt (16))),
-    S.chain (S.sequence (S.Maybe)),
-    S.map (S.sum),
-]) ('{"x":{"y":{"z":["28","29","2A"]}}}')
+S.pipe([
+  S.parseJson((_) => true),
+  S.chain(S.gets(S.is($.Array($.String)))(["x", "y", "z"])),
+  S.map(S.map(S.parseInt(16))),
+  S.chain(S.sequence(S.Maybe)),
+  S.map(S.sum),
+])('{"x":{"y":{"z":["28","29","2A"]}}}');
 // Just (123)
 ```
+
 ---
 
 - No IFs
@@ -287,15 +286,16 @@ Sanctuary<br>&times;<br>Ramda
 > Ramda provides several functions which return problematic values such as `undefined`, `Infinity`, or `NaN` when applied to unsuitable inputs.
 
 > Every Sanctuary function is defined for every value which is a member of the function's input type. Such functions are known as total functions.
+
 <!-- .element: class="fragment" -->
 
 ---
 
 ```js
-if (R.isEmpty (xs)) {
+if (R.isEmpty(xs)) {
   // ...
 } else {
-  return f (R.head (xs));
+  return f(R.head(xs));
 }
 ```
 

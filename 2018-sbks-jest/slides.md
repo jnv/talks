@@ -1,14 +1,12 @@
 ---
 title: "Jest: Co možná neznáte"
-theme: night
-highlightTheme: tomorrow-night-bright
-css: custom.css
 revealOptions:
   transition: fade
   controls: false
 ---
 
 # Jest 🃏
+
 ## Co možná neznáte
 
 Jan Vlnas, Tech Talks #7<br>13. 8. 2018
@@ -23,8 +21,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 ![Jasmine](img/jasmine.svg)
 
-----
-
+---
 
 > Talking to other parts of the business who ‘failed to adopt’ Jest, they would tell us that it was a pain to set up, that it would crash silently in the background without alerting anyone and when they tried to actually use it, it required an older version of NodeJS. Whaat?
 
@@ -40,7 +37,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 <small>[JavaScript Unit Testing Performance (2016)](https://jestjs.io/blog/2016/03/11/javascript-unit-testing-performance)</small>
 
-----
+---
 
 ![create-react-app](img/create-react-app.png)
 
@@ -50,7 +47,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 ![Aribnb](img/airbnb.png)
 
-----
+---
 
 > Running our test suite with Mocha took 12+ minutes. In CI […] we’re now able to run the entire Jest suite in 4 minutes 30 seconds.
 
@@ -60,7 +57,7 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 # Proč Jest?
 
-----
+---
 
 - Minimální konfigurace
   - Runner, assertions, mocking, snapshots <!-- .element: class="fragment" -->
@@ -72,37 +69,37 @@ Jan Vlnas, Tech Talks #7<br>13. 8. 2018
 
 # Jak se používá
 
-----
+---
 
 ### Kam s testy
 
 - Adresář: `__tests__`
 - Soubory: `*.test.js(x)`
 
-----
+---
 
 ```js
 // __tests__/sum.js
-const {sum} = require('../sum')
+const { sum } = require("../sum");
 
-describe('.sum', () => {
-  test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3)
-  })
-})
+describe(".sum", () => {
+  test("adds 1 + 2 to equal 3", () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+});
 ```
 
-----
+---
 
 ```js
 // __tests__/sum.js
-const {sum} = require('../sum')
+const { sum } = require("../sum");
 
-describe('.sum', () => {
-  it('adds two numbers', () => {
-    expect(sum(1, 2)).toBe(3)
-  })
-})
+describe(".sum", () => {
+  it("adds two numbers", () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+});
 ```
 
 <small>[Better Specs: Don't use should](http://www.betterspecs.org/#should)</small>
@@ -111,7 +108,7 @@ describe('.sum', () => {
 
 ## Parametrické testy
 
-----
+---
 
 ```js
 // Array syntax
@@ -119,15 +116,12 @@ test.each([
   [1, 1, 2],
   [1, 2, 3],
   [2, 1, 3],
-])(
-  '.sum(%i, %i) => %i',
-  (a, b, expected) => {
-    expect(sum(a, b)).toBe(expected);
-  },
-)
+])(".sum(%i, %i) => %i", (a, b, expected) => {
+  expect(sum(a, b)).toBe(expected);
+});
 ```
 
-----
+---
 
 ```js
 test.each`
@@ -135,74 +129,73 @@ test.each`
   ${1} | ${1} | ${2}
   ${1} | ${2} | ${3}
   ${2} | ${1} | ${3}
-`('returns $expected for sum($a, $b)', ({a, b, expected}) => {
+`("returns $expected for sum($a, $b)", ({ a, b, expected }) => {
   expect(sum(a, b)).toBe(expected);
-})
+});
 ```
 
 ---
 
 ## [Mockování funkcí](https://jestjs.io/docs/en/mock-functions)
 
-----
+---
 
 ### `jest.fn`
 
 ```js
-const myMock = jest.fn()
+const myMock = jest.fn();
 
-myMock(1, 2)
+myMock(1, 2);
 
-expect(myMock).toHaveBeenCalled()
-expect(myMock).toHaveBeenLastCalledWith(1, 2)
+expect(myMock).toHaveBeenCalled();
+expect(myMock).toHaveBeenLastCalledWith(1, 2);
 ```
 
-----
+---
 
 ### `jest.spyOn`
 
 ```js
-const nowSpy = jest.spyOn(Date, 'now')
-Date.now()
-expect(nowSpy).toHaveBeenCalled()
+const nowSpy = jest.spyOn(Date, "now");
+Date.now();
+expect(nowSpy).toHaveBeenCalled();
 ```
 
-----
+---
 
 ### Mockování času
 
 ```js
-const mockedDate = Date.UTC(2018, 5, 1)
-const nowSpy = jest.spyOn(Date, 'now')
-  .mockImplementation(() => mockedDate)
+const mockedDate = Date.UTC(2018, 5, 1);
+const nowSpy = jest.spyOn(Date, "now").mockImplementation(() => mockedDate);
 
 // ...later
-nowSpy.mockRestore()
+nowSpy.mockRestore();
 ```
 
 ---
 
 ## [Mockování modulů](https://jestjs.io/docs/en/manual-mocks)
 
-----
+---
 
 ```js
 // modul.js
 
-const randomNumber = require('random-number')
+const randomNumber = require("random-number");
 
 exports.randomIndex = () => {
-  return 'someIndex-' + randomNumber()
-}
+  return "someIndex-" + randomNumber();
+};
 ```
 
 ```js
 // modul.test.js
 
-expect(randomIndex()).toBe('someIndex-4')
+expect(randomIndex()).toBe("someIndex-4");
 ```
 
-----
+---
 
 ```
 .
@@ -214,12 +207,12 @@ expect(randomIndex()).toBe('someIndex-4')
     └── modul.js
 ```
 
-----
+---
 
 ```js
 // __mocks__/random-number.js
 
-module.exports = () => 4
+module.exports = () => 4;
 ```
 
 ---
@@ -232,12 +225,12 @@ module.exports = () => 4
 ---
 
 ```js
-jest.mock('../module-name', () => {
-  return jest.fn(() => 42)
-})
+jest.mock("../module-name", () => {
+  return jest.fn(() => 42);
+});
 
-const moduleName = require('../module-name')
-moduleName() // => 42
+const moduleName = require("../module-name");
+moduleName(); // => 42
 ```
 
 ---
@@ -260,13 +253,13 @@ Jest automaticky nevyčistí volání mocků mezi testy.
 
 ## [Immersive Watch Mode](http://facebook.github.io/jest/blog/2017/02/21/jest-19-immersive-watch-mode-test-platform-improvements.html)
 
-----
+---
 
 ```sh
 npx jest --watch
 ```
 
-----
+---
 
 [![asciicast](https://asciinema.org/a/ndh9L1WBhfBPJCCbR3suyGfjs.png)](https://asciinema.org/a/ndh9L1WBhfBPJCCbR3suyGfjs?size=medium) <!-- .element class="stretch" target="_blank" -->
 
@@ -274,10 +267,10 @@ npx jest --watch
 
 ## [Snapshot Testing](https://jestjs.io/docs/en/snapshot-testing.html)
 
-----
+---
 
 ```js
-expect({some: 'object'}).toMatchSnapshot()
+expect({ some: "object" }).toMatchSnapshot();
 ```
 
 ```js
@@ -288,23 +281,24 @@ Object {
 }
 `;
 ```
+
 <!-- .element: class="fragment" -->
 
-----
+---
 
 ```js
-expect({some: 'object'}).toMatchSnapshot()
+expect({ some: "object" }).toMatchSnapshot();
 ```
 
 ```js
-expect({some: 'object', other: 'stuff'}).toMatchSnapshot()
+expect({ some: "object", other: "stuff" }).toMatchSnapshot();
 ```
 
-----
+---
 
 ![snap fail](img/snap-fail.png)
 
-----
+---
 
 ```sh
 npx jest -u
@@ -319,6 +313,7 @@ Object {
 }
 `;
 ```
+
 ---
 
 ### Snapshoty: Pro a proti
@@ -328,7 +323,7 @@ Object {
 - 👎 Křehkost při velkých změnách <!-- .element: class="fragment li-emoji" -->
 - 👎 Není zřejmé, co je důležité <!-- .element: class="fragment li-emoji" -->
 
-----
+---
 
 Viz také
 
@@ -356,7 +351,6 @@ Viz také
 ---
 
 [github.com/jnv/talk-jest](https://github.com/jnv/talk-jest)
-
 
 <!--
 ## Snaphoty v Mocha / Chai

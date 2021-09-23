@@ -56,6 +56,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# we want latest stuff all the time
-package-lock.json
