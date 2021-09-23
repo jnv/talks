@@ -6,3 +6,6 @@ npm run build
 mv _static public
 rm public/index.html
 cp README.md public/
+
+# noops
+cp -r 2021-09-unsuck-apis public/
