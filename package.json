@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "make"
+    "build": "reveal-md . --static --glob '**/slides.md'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jnv/talks#readme",
   "dependencies": {
-    "reveal-md": "^3.3.1"
+    "reveal-md": "^4.1.0"
   }
 }

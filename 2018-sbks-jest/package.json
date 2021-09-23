@@ -4,8 +4,6 @@
   "private": true,
   "description": "",
   "scripts": {
-    "start": "npx reveal-md -w slides.md",
-    "build": "npx reveal-md slides.md --css custom.css --static-dirs=img --static",
     "test": "jest"
   },
   "author": "Jan Vlnas <jan.vlnas@socialbakers.com>",

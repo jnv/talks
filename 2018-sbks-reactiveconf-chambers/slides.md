@@ -2,7 +2,6 @@
 title: "ReactiveConf 2018: Programming Safely in an Uncertain World"
 theme: night
 highlightTheme: tomorrow-night-bright
-css: custom.css
 revealOptions:
   transition: fade
   controls: false

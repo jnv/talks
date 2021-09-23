@@ -2,7 +2,8 @@
 title: "Jest: Co možná neznáte"
 theme: night
 highlightTheme: tomorrow-night-bright
-css: custom.css
+staticDirs: [img]
+css: 2018-sbks-jest/custom.css
 revealOptions:
   transition: fade
   controls: false

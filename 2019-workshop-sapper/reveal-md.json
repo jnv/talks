@@ -1,6 +1,0 @@
-{
-  "assetsDir": "assets",
-  "highlightTheme": "vs",
-  "css": ["custom.css"],
-  "staticDirs": ["img"]
-}

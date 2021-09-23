@@ -1,6 +1,9 @@
 ---
 title: "Build a Website on a Headless CMS with Svelte"
 theme: white
+highlightTheme: vs
+css: 2019-workshop-sapper/custom.css
+staticDirs: ["img"]
 revealOptions:
   controls: true
 ---
