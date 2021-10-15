@@ -17,6 +17,6 @@ My talks and workshops in a single repo.
 ### 2021
 
 - [Unsuck APIs With Superface](2021-09-unsuck-apis/)
-- Progressive Hydration: JAMstack bez J 🇨🇿
+- Progressive Hydration: JAMstack bez J 🇨🇿 – for [PragueJS](https://www.meetup.com/praguejs/) meetup
   - [Google Slides](https://docs.google.com/presentation/d/17W5pF0PXOmMYZtg-mndTmru1wsee6y130ctHG8-F4rc/edit?usp=sharing)
   - [complementary repository](https://github.com/jnv/talks-jamstack-without-j)
