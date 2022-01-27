@@ -20,3 +20,9 @@ My talks and workshops in a single repo.
 - Progressive Hydration: JAMstack bez J 🇨🇿 – for [PragueJS](https://www.meetup.com/praguejs/) meetup
   - [Google Slides](https://docs.google.com/presentation/d/17W5pF0PXOmMYZtg-mndTmru1wsee6y130ctHG8-F4rc/edit?usp=sharing)
   - [complementary repository](https://github.com/jnv/talks-jamstack-without-j)
+
+### 2022
+
+- Don't get burned by APIs – for [PragueJS](https://www.meetup.com/praguejs/) meetup
+  - [Google Slides](https://docs.google.com/presentation/d/1IPpZuTYI0oR24shsnoi2JUC8WKaiyGZ2_DTwnBWprYM/edit?usp=sharing)
+  - [demo code](https://github.com/jnv/superface-demo-22-01-praguejs)
