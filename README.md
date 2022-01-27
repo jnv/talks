@@ -25,4 +25,5 @@ My talks and workshops in a single repo.
 
 - Don't get burned by APIs – for [PragueJS](https://www.meetup.com/praguejs/) meetup
   - [Google Slides](https://docs.google.com/presentation/d/1IPpZuTYI0oR24shsnoi2JUC8WKaiyGZ2_DTwnBWprYM/edit?usp=sharing)
+  - [PDF](https://github.com/jnv/talks/releases/download/2022-dont-get-burned/2022-01-dont-get-burned-by-apis.pdf)
   - [demo code](https://github.com/jnv/superface-demo-22-01-praguejs)
