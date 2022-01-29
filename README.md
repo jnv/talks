@@ -27,3 +27,5 @@ My talks and workshops in a single repo.
   - [Google Slides](https://docs.google.com/presentation/d/1IPpZuTYI0oR24shsnoi2JUC8WKaiyGZ2_DTwnBWprYM/edit?usp=sharing)
   - [PDF](https://github.com/jnv/talks/releases/download/2022-dont-get-burned/2022-01-dont-get-burned-by-apis.pdf)
   - [demo code](https://github.com/jnv/superface-demo-22-01-praguejs)
+- What Senior Developers Have (not) Told You – for [DevConf.CZ](https://www.devconf.info/cz/)
+  - [Google Slides](https://docs.google.com/presentation/d/1R7C1I7H8zyOyRDuFwc73Qn9bUPSHa1LyoMWyWq4Cqt4/edit?usp=sharing)
