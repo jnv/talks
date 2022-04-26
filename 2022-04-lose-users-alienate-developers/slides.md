@@ -283,11 +283,41 @@ vidbg: https://media.giphy.com/media/saAZVlxwMPOW4/giphy.gif
 
 ---
 
-heaviest
+<!-- .slide: data-background="#fff" -->
+
+![](img/heavy1.png)
 
 ---
 
-heaviest 2
+<!-- .slide: data-background="#fff" -->
+
+![](img/heavy2.png)
+
+---
+
+<!-- .slide: data-background="#fff" -->
+
+![](img/diskprice.jpg)
+
+<small>[Disk Drive Storage Price Decreasing with Time](https://jcmit.net/disk2015.htm) (October, 2021)</small>
+
+---
+
+&lt; $&nbsp;0.01 <!-- .element: class="r-fit-text" -->
+
+per megabyte
+
+---
+
+> Unused RAM is wasted RAM.
+
+---
+
+![](img/dependabot.png)
+
+---
+
+![](img/automerge.png)
 
 ---
 
@@ -295,4 +325,147 @@ vidbg: https://media.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif
 
 ---
 
-vidbg" https://media.giphy.com/media/yS36IeP5FpzxqkfuCj/giphy.gif
+## Make a
+
+## statement<!-- .element: class="r-fit-text" -->
+
+---
+
+```js
+function foo(str, len, ch) {
+  str = String(str);
+  var i = -1;
+  if (!ch && ch !== 0) ch = " ";
+  len = len - str.length;
+  while (++i < len) {
+    str = ch + str;
+  }
+  return str;
+}
+```
+
+---
+
+```js
+module.exports = leftpad;
+function leftpad(str, len, ch) {
+  str = String(str);
+  var i = -1;
+  if (!ch && ch !== 0) ch = " ";
+  len = len - str.length;
+  while (++i < len) {
+    str = ch + str;
+  }
+  return str;
+}
+```
+
+---
+
+> Summary; NPM is no longer a place that I’ll share my open source work at, so, **I’ve just unpublished all my modules**.
+>
+> — Azer Koçulu: [I’ve Just Liberated My Modules](https://web.archive.org/web/20160606121146/https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c)
+
+---
+
+<div style="display: flex; align-items: center; justify-content: space-around">
+
+<img src="img/brain1.webp" width="500">
+
+left-pad
+
+</div>
+
+---
+
+<div style="display: flex; align-items: center; justify-content: space-around">
+
+<img src="img/brain2.jpg" width="500">
+
+uWebSockets.js
+
+</div>
+
+---
+
+> uWS’s author, in some kind of childish act of vengeance, tried to break dependent libraries and services by **publishing an empty version of the module**…
+> the team behind NPM manually removed it and locked the package
+>
+> — Manuel Astudillo, [Beware of uWebsockets.js!](https://medium.com/@rockstudillo/beware-of-uwebsockets-js-b51c92cac83f)
+
+---
+
+<div style="display: flex; align-items: center; justify-content: space-around">
+
+<img src="img/brain3.jpg" width="500">
+
+Protestware
+
+</div>
+
+---
+
+> the malicious code, committed […] by the dev, would read the system's external IP address and **only delete data by overwriting files for users based in Russia and Belarus.**
+>
+> ­— [BIG sabotage: Famous npm package deletes files to protest Ukraine war](https://www.bleepingcomputer.com/news/security/big-sabotage-famous-npm-package-deletes-files-to-protest-ukraine-war/)
+
+---
+
+- colors &amp; faker
+- node-ipc
+- event-source-polyfill
+
+---
+
+vidbg: https://media.giphy.com/media/l2Sq9qGTQnL5NyI6Y/giphy.gif
+
+---
+
+## event-stream
+
+- popular, but abandoned package ✅ <!-- .element: class="fragment" -->
+- new volunteer maintainer ✅ <!-- .element: class="fragment" -->
+- new, innocent subdependency ✅ <!-- .element: class="fragment" -->
+- injection into published, minifed code ✅ <!-- .element: class="fragment" -->
+
+<small>[A post-mortem of the malicious event-stream backdoor](https://snyk.io/blog/a-post-mortem-of-the-malicious-event-stream-backdoor/) <!-- .element: class="fragment" --><small>
+
+---
+
+### Inspiration
+
+![](img/actual-malware.png)
+
+---
+
+<div style="display: flex; align-items: center;">
+
+![](img/drake1.jpg)
+
+Stealing
+
+</div>
+
+<div class="fragment" style="display: flex; align-items: center;">
+
+![](img/drake2.jpg)
+
+Surprise open-source sponsorship
+
+</div>
+
+---
+
+# How do <u>you</u> alienate developers?
+
+---
+
+/s <!-- .element: class="r-fit-text" -->
+
+---
+
+[@janvlnas](https://twitter.com/janvlnas)
+
+[jan.vlnas.cz](https://jan.vlnas.cz/)
+
+[superface.ai](https://superface.ai/)
