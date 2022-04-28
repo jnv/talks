@@ -14,8 +14,7 @@ My talks and workshops in a single repo.
   - [recording](https://www.youtube.com/watch?v=Y6xAzQCGXNM)
   - [Google Slides](https://docs.google.com/presentation/d/1R7C1I7H8zyOyRDuFwc73Qn9bUPSHa1LyoMWyWq4Cqt4/edit?usp=sharing)
   - [PDF](https://github.com/jnv/talks/releases/download/2022-what-senior-developers-have-not-told-you/2022-01-what_senior_developers_have_not_told_you.pdf)
-- How to lose users and alienate developers – presented on [PragueJS meetup](https://www.meetup.com/praguejs/events/285335331/)
-  - [slides](2022-04-lose-users-alienate-developers/)
+- [How to lose users and alienate developers](2022-04-lose-users-alienate-developers/) – presented on [PragueJS meetup](https://www.meetup.com/praguejs/events/285335331/)
 
 ### 2021
 
