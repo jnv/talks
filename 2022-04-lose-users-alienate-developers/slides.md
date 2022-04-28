@@ -478,3 +478,42 @@ Surprise open-source sponsorship
 [jan.vlnas.cz](https://jan.vlnas.cz/)
 
 [superface.ai](https://superface.ai/)
+
+---
+
+# Resources
+
+<!-- prettier-ignore-start -->
+
+----
+<!-- prettier-ignore-end -->
+
+### Docs
+
+- [Avoid "Just" and "Simply" in Documentation](http://jackkelly.name/blog/archives/2019/09/20/avoid_just_and_simply_in_documentation/index.html)
+- [Words To Avoid in Educational Writing](https://css-tricks.com/words-avoid-educational-writing/)
+
+<!-- prettier-ignore-start -->
+
+----
+<!-- prettier-ignore-end -->
+
+### API
+
+- [Spectral](https://github.com/stoplightio/spectral) – API style guide linter
+- [LinkedIn Marketing API](https://docs.microsoft.com/en-us/linkedin/marketing/)
+
+<!-- prettier-ignore-start -->
+
+----
+<!-- prettier-ignore-end -->
+
+### Packages
+
+- [left-pad](https://www.npmjs.com/package/left-pad)
+  - [How one programmer broke the internet by deleting a tiny piece of code](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code/)
+  - [I’ve Just Liberated My Modules](https://web.archive.org/web/20160606121146/https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c)
+- uWebSockets.js ([uws](https://www.npmjs.com/package/uws))
+  - [Beware of uWebsockets.js!](https://medium.com/@rockstudillo/beware-of-uwebsockets-js-b51c92cac83f)
+- [event-stream](https://www.npmjs.com/package/event-stream): [A post-mortem of the malicious event-stream backdoor](https://snyk.io/blog/a-post-mortem-of-the-malicious-event-stream-backdoor/)
+- [actual-malware](https://github.com/qpwo/actual-malware)
