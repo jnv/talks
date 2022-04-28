@@ -5,6 +5,7 @@ highlightTheme: tomorrow-night-bright
 revealOptions:
   transition: fade
   controls: false
+  progress: false
   autoPlayMedia: true
 ---
 
@@ -64,7 +65,7 @@ Jan Vlnas, Dev<span>il's</span> Advocate<span> 😈</span>
 
 ---
 
-## Goals <!-- .element: class="r-fit-text" -->
+## Goal <!-- .element: class="r-fit-text" -->
 
 ---
 
@@ -142,6 +143,10 @@ vidbg: https://media.giphy.com/media/3oEjHD20zWeDvGWoF2/giphy.gif
 ---
 
 “Just one simple SDK for all the APIs you want to integrate with.”
+
+---
+
+vidbg: https://media.giphy.com/media/z7c0AbqdRR2XS1FwTj/giphy.gif
 
 ---
 
@@ -264,6 +269,10 @@ vidbg: https://media.giphy.com/media/saAZVlxwMPOW4/giphy.gif
   }
 }
 ```
+
+---
+
+vidbg: https://media.giphy.com/media/0760zVJuQ85FJktjhg/giphy.gif
 
 ---
 
