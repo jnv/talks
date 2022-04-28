@@ -1,0 +1,5 @@
+{
+  "assetsDir": "assets",
+  "css": ["custom.css"],
+  "staticDirs": ["img"]
+}
