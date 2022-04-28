@@ -1,5 +1,5 @@
 ---
-title: PragueJS 2022/04
+title: How to lose users and alienate developers
 theme: black
 highlightTheme: tomorrow-night-bright
 revealOptions:
