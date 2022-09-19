@@ -17,6 +17,7 @@ My talks and workshops in a single repo.
 - [How to lose users and alienate developers](2022-04-lose-users-alienate-developers/) – presented on [PragueJS meetup](https://www.meetup.com/praguejs/events/285335331/)
 - [Autonomous API Integrations](https://docs.google.com/presentation/d/1VYdU7wJwSMWWwtNB1PNN1Gy1jmSSYgKJKpzofczfpL4/edit?usp=sharing) – presented on [Applifting Crew Talk](https://www.meetup.com/applifting-meetup-1/events/287854441/)
   - [Google Slides](https://docs.google.com/presentation/d/1VYdU7wJwSMWWwtNB1PNN1Gy1jmSSYgKJKpzofczfpL4/edit?usp=sharing)
+  - [PDF](https://github.com/jnv/talks/releases/download/2022-09-autonomous-api-integrations/2022-09-Autonomous_API_Integrations.pdf)
 
 ### 2021
 
