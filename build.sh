@@ -14,3 +14,4 @@ cp README.md public/index.md
 
 # noops
 cp -r 2021-09-unsuck-apis public/
+cp -r 2024-05-activitypub public/

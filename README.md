@@ -4,6 +4,14 @@ My talks and workshops in a single repo.
 
 ## Contents
 
+### 2024
+
+- The Web We've (Never) Lost – presented on [PragueJS meetup](https://www.meetup.com/praguejs/events/298730885/)
+  - [write up](https://www.bitoff.org/web-we-never-lost/)
+- [Let’s dive into ActivityPub: Protocol for the social web and beyond](2024-03-activitypub/) – presented on [WebExpo 2024](https://webexpo.net/prague2024/)
+  - [resources](https://www.bitoff.org/ap/)
+- Why we needed an API gateway (and maybe you don’t) – presented on [Outreach Prague meetup](https://www.eventbrite.com/e/applications-at-scale-microservices-and-api-tickets-1002930962507)
+
 ### 2022
 
 - Don't get burned by APIs – presented on [PragueJS meetup](hhttps://www.meetup.com/praguejs/events/269001730/)
