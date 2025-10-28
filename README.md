@@ -50,7 +50,15 @@ My talks and workshops in a single repo.
 ### 2014
 
 - [Decentralizovaná budoucnost sociálních médií](https://www.bitoff.cz/nmi14/) 🇨🇿 – for [New Media Inspiration 2014](https://www.tuesday.cz/akce/new-media-inspiration-2014/)
-
+  - [PDF](https://github.com/jnv/talks/releases/download/2008-2014/2014-decentralizovana-budoucnost-sm.pdf)
+  - [PPT](https://github.com/jnv/talks/releases/download/2008-2014/2014-decentralizovana-budoucnost-sm.ppt)
+  
 ### Before…
 
-Some of my oldest talks are available on [Slideshare](https://www.slideshare.net/janvlnas).
+- [Aplikační podpora pro správu projektů](https://github.com/jnv/talks/releases/download/2008-2014/2012-bkp.pdf) 🇨🇿 – Bachelor thesis defense, 2012
+- [Everyware: Počítače všude kolem nás](https://github.com/jnv/talks/releases/download/2008-2014/2010-everyware.pdf) 🇨🇿 – presented on [Festival Fantazie] 2010
+- [Sampling: Hudební recyklace zblízka](https://github.com/jnv/talks/releases/download/2008-2014/2008-sampling.pdf) 🇨🇿 – presented on [Festival Fantazie] 2008
+- [Glitch Art: Chyba ve službách umění](https://github.com/jnv/talks/releases/download/2008-2014/2008-glitch-art.pdf) 🇨🇿 – presented on [Festival Fantazie] 2008
+- [Cyberpunk – život, dílo a smrt](https://github.com/jnv/talks/releases/download/2008-2014/2008-cyberpunk.pdf) 🇨🇿 – presented on [Festival Fantazie] 2008
+
+[Festival Fantazie]: https://www.festivalfantazie.cz/
