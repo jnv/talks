@@ -28,6 +28,10 @@ My talks and workshops in a single repo.
 - Autonomous API Integrations – presented on [Applifting Crew Talk](https://www.meetup.com/applifting-meetup-1/events/287854441/)
   - [Google Slides](https://docs.google.com/presentation/d/1-H9nScuq_sUPk-pkFonmO8B4RtlXzH-qxOhFsW8V6hk/edit?usp=sharing)
   - [PDF](https://github.com/jnv/talks/releases/download/2022-09-autonomous-api-integrations/2022-09-Autonomous_API_Integrations.pdf)
+- Why Your API Doesn’t Solve My Problem: Use Case-Driven API Design – presented on [API World](https://apiworld.co/) and [API the Docs](https://apithedocs.org/)
+  - [API World recording](https://www.youtube.com/watch?v=Iuah0dMeYgc)
+  - [write up from API the Docs](https://pronovix.com/event/api-docs-virtual-2022/jan-vlnas)
+  - [Google Slides](https://docs.google.com/presentation/d/1vnw0bpdercjf6fm_NpyHHAd2-bFlzBmE_8uRcM_Cqf0/edit?usp=sharing)
 
 ### 2021
 
