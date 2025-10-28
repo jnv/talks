@@ -14,6 +14,12 @@ My talks and workshops in a single repo.
 - Why we needed an API gateway (and maybe you don’t) – presented on [Outreach Prague meetup](https://www.eventbrite.com/e/applications-at-scale-microservices-and-api-tickets-1002930962507)
   - [PDF](https://github.com/jnv/talks/releases/download/2024-talks/2024-09-API_Gateways.pdf)
 
+### 2023
+
+- Exploring the language tooling (the hard way) – Presented on Mews R&D meetup “Coding the Code”
+  - [Google Slides](https://docs.google.com/presentation/d/1Du3P2HVOlo_AWoS1gFYYxDLWil8tTMJ9tQBu-h8ybUk/edit?usp=sharing)
+  - [PDF](https://github.com/jnv/talks/releases/download/2023-language-tooling/2023-05-Exploring_the_language_tooling_the_hard_way.pdf)
+
 ### 2022
 
 - Don't get burned by APIs – presented on [PragueJS meetup](hhttps://www.meetup.com/praguejs/events/269001730/)
