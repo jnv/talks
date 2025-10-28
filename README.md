@@ -17,7 +17,7 @@ My talks and workshops in a single repo.
 ### 2022
 
 - Don't get burned by APIs – presented on [PragueJS meetup](hhttps://www.meetup.com/praguejs/events/269001730/)
-  - [Google Slides](https://docs.google.com/presentation/d/1IPpZuTYI0oR24shsnoi2JUC8WKaiyGZ2_DTwnBWprYM/edit?usp=sharing)
+  - [Google Slides](https://docs.google.com/presentation/d/1CoXgfchJDeY6RkcmMhrL0cVp6YoQMeeKgTWaAYK_Vyc/edit?usp=sharing)
   - [PDF](https://github.com/jnv/talks/releases/download/2022-dont-get-burned/2022-01-dont-get-burned-by-apis.pdf)
   - [demo code](https://github.com/jnv/superface-demo-22-01-praguejs)
 - What Senior Developers Have (not) Told You – for [DevConf.CZ](https://www.devconf.info/cz/)
@@ -25,8 +25,8 @@ My talks and workshops in a single repo.
   - [Google Slides](https://docs.google.com/presentation/d/1R7C1I7H8zyOyRDuFwc73Qn9bUPSHa1LyoMWyWq4Cqt4/edit?usp=sharing)
   - [PDF](https://github.com/jnv/talks/releases/download/2022-what-senior-developers-have-not-told-you/2022-01-what_senior_developers_have_not_told_you.pdf)
 - [How to lose users and alienate developers](2022-04-lose-users-alienate-developers/) – presented on [PragueJS meetup](https://www.meetup.com/praguejs/events/285335331/)
-- [Autonomous API Integrations](https://docs.google.com/presentation/d/1VYdU7wJwSMWWwtNB1PNN1Gy1jmSSYgKJKpzofczfpL4/edit?usp=sharing) – presented on [Applifting Crew Talk](https://www.meetup.com/applifting-meetup-1/events/287854441/)
-  - [Google Slides](https://docs.google.com/presentation/d/1VYdU7wJwSMWWwtNB1PNN1Gy1jmSSYgKJKpzofczfpL4/edit?usp=sharing)
+- Autonomous API Integrations – presented on [Applifting Crew Talk](https://www.meetup.com/applifting-meetup-1/events/287854441/)
+  - [Google Slides](https://docs.google.com/presentation/d/1-H9nScuq_sUPk-pkFonmO8B4RtlXzH-qxOhFsW8V6hk/edit?usp=sharing)
   - [PDF](https://github.com/jnv/talks/releases/download/2022-09-autonomous-api-integrations/2022-09-Autonomous_API_Integrations.pdf)
 
 ### 2021
@@ -52,7 +52,7 @@ My talks and workshops in a single repo.
 - [Decentralizovaná budoucnost sociálních médií](https://www.bitoff.cz/nmi14/) 🇨🇿 – for [New Media Inspiration 2014](https://www.tuesday.cz/akce/new-media-inspiration-2014/)
   - [PDF](https://github.com/jnv/talks/releases/download/2008-2014/2014-decentralizovana-budoucnost-sm.pdf)
   - [PPT](https://github.com/jnv/talks/releases/download/2008-2014/2014-decentralizovana-budoucnost-sm.ppt)
-  
+
 ### Before…
 
 - [Aplikační podpora pro správu projektů](https://github.com/jnv/talks/releases/download/2008-2014/2012-bkp.pdf) 🇨🇿 – Bachelor thesis defense, 2012
