@@ -32,6 +32,7 @@ My talks and workshops in a single repo.
   - [API World recording](https://www.youtube.com/watch?v=Iuah0dMeYgc)
   - [write up from API the Docs](https://pronovix.com/event/api-docs-virtual-2022/jan-vlnas)
   - [Google Slides](https://docs.google.com/presentation/d/1vnw0bpdercjf6fm_NpyHHAd2-bFlzBmE_8uRcM_Cqf0/edit?usp=sharing)
+  - [PDF](https://github.com/jnv/talks/releases/download/2022-why-your-api-doesnt-solve/2022-10-Why_your_API_doesnt_solve_my_problem.pdf)
 
 ### 2021
 
