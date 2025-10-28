@@ -4,6 +4,19 @@ My talks and workshops in a single repo.
 
 ## Contents
 
+<!-- draft until I have all the recordings
+
+### 2025
+
+- The (API) gateway to hell: Fixing a decade of poor API design decisions – Ignite talk presented on [DevOpsDays Prague](https://devopsdays.org/events/2025-prague/)
+  - [recording](https://www.youtube.com/watch?v=U_6IvXnK_xw)
+  - [PDF]()
+- The (API) gateway to hell: Fixing a decade of poor API design decisions – longer talk presented on [DevFest.cz](https://devfest.cz/)
+  - [recording]()
+  - [PDF]()
+
+-->
+
 ### 2024
 
 - The Web We've (Never) Lost – presented on [PragueJS meetup](https://www.meetup.com/praguejs/events/298730885/)
