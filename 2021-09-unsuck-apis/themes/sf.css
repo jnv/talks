@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;900&display=swap');
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'CircularXX', 'Work Sans', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+em,
+.em {
+  color: #1ee2c7;
+  font-style: normal;
+}
+
+mark {
+  background: #1ee2c7;
+}
+
+s {
+  text-decoration-color: #1ee2c7;
+}
+
+hr {
+  border: solid #fff thin;
+  opacity: 0.7;
+}
+
+.sm,
+code,
+small {
+  text-transform: none;
+}
+
+q {
+  display: block;
+  text-indent: -1ex;
+}
+
+a {
+  color: #7cbfe5;
+  text-decoration-skip: ink;
+}
+
+a:hover {
+  background: #4e5b6f;
+}

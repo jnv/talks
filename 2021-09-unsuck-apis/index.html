@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Unsuck API integrations with Superface</title>
+    <link href="big.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="themes/sf.css" />
+    <script src="big.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Unsuck <em>API&nbsp;Integrations</em></h1>
+      <small class="nowrap">DKSS by Cookielab, 1. 10. 2021</small><br />
+      <small class="nowrap">Jan Vlnas, Superface</small>
+      <notes>Speakers notes go here.</notes>
+    </div>
+
+    <div>Developer advocate</div>
+
+    <div>API integrations? 🤔</div>
+
+    <div>
+      Send <em>email</em><br />
+      Track <em>parcel</em><br />
+      Get <em>weather</em><br />
+      Fetch <em>ad metrics</em>
+      <div class="nowrap">Send <em>event</em> to analytics</div>
+    </div>
+
+    <div>
+      <span class="sm">3rd</span> parties<br />&amp;<br />Internal&nbsp;APIs
+    </div>
+
+    <div>
+      <em class="nowrap"><span class="sm">3rd</span> parties</em>
+      <br />&amp;<br />Internal&nbsp;APIs
+    </div>
+
+    <div><em>Capabilities</em></div>
+
+    <div>API integrations <em>suck</em></div>
+
+    <div>
+      API integrations suck<em>?</em>
+
+      <notes>✋ Raise your hand if you agree</notes>
+    </div>
+
+    <div>
+      <em>Why</em> they suck?
+      <notes></notes>
+    </div>
+
+    <div class="nowrap sm">(rant ahead)</div>
+
+    <div><em>Discovery</em> sucks</div>
+
+    <div>
+      <img src="img/search_email_api.png" alt="" style="max-height: 90vh" />
+    </div>
+
+    <div>
+      Is it <em>cheap</em>?<br />
+      Is it <em>easy</em>?<br />
+      Is it <em>reliable</em>?
+    </div>
+
+    <div>Too many <em>options</em></div>
+
+    <div>
+      <img src="img/github_products.png" alt="" />
+    </div>
+
+    <div><em>Documentation</em> sucks</div>
+
+    <div class="sm">
+      <q>I want to list <em>repositories</em></q>
+    </div>
+
+    <div>
+      <img src="img/bitbucket.png" alt="" />
+    </div>
+
+    <div>
+      Doesn't solve <em>my</em>&nbsp;problem
+
+      <notes>Great your API is restful</notes>
+    </div>
+
+    <div><em>Functionality</em> sucks</div>
+
+    <div>Docs don't reflect <em>reality</em></div>
+
+    <!-- <div class="layout">
+      <img src="img/tumblr_docs.png" alt="" />
+      <notes> This is example from Tumblr API documentation. </notes>
+    </div> -->
+
+    <div>
+      <em>Interactive</em> examples
+
+      <notes>I'd rather call the API than to trust the documentation</notes>
+    </div>
+
+    <div>
+      <em>Maintenance</em> sucks
+
+      <notes>APIs evolve even if your use-case remains the same.</notes>
+    </div>
+
+    <!-- <div>
+      <img src="img/facebook_breaks_twitter.png" alt="">
+    </div> -->
+
+    <div>
+      <img src="img/strip_nicer.png" alt="" />
+    </div>
+
+    <div><em>Outages</em> suck</div>
+
+    <div><img src="img/tweet_email.png" alt="" /></div>
+
+    <div>
+      Integration<br />is<br /><em>liability</em>
+
+      <notes>Maybe it works for now, but it may come later and bite you.</notes>
+    </div>
+
+    <div>
+      <em>Machine</em> to<br />
+      <em>machine</em> communication<br />
+      &nbsp;
+    </div>
+
+    <div>
+      <em>Machine</em> to<br />
+      <em>machine</em> communication<br />
+      <small class="sm">is fiction</small>
+    </div>
+
+    <!-- <div>TODO Orly?</div> -->
+
+    <div>
+      🧑🏾‍💻 build API<br />
+      🧑🏼‍💻 write docs<br />
+      <hr />
+      👩🏻‍💻 read docs<br />
+      👩🏻‍💻&nbsp;write&nbsp;integration<br />
+    </div>
+
+    <div>
+      <em>Humans</em> to<br />
+      <em>humans</em> communication<br />
+      <small>via docs</small>
+    </div>
+
+    <div>What can&nbsp;we <em>do</em> about it?</div>
+
+    <div>
+      <img src="img/strip_worship.png" alt="" />
+    </div>
+
+    <div>More tooling?</div>
+
+    <div class="layout">
+      <img src="img/api_landscape.png" alt="" />
+    </div>
+
+    <div>Curing&nbsp;<em>symptoms</em>, not <em>disease</em></div>
+
+    <div><small class="nowrap">(sales pitch ahead)</small></div>
+
+    <div class="layout">
+      <img src="img/superface.svg" alt="" style="display: block" />
+    </div>
+
+    <div>Principles</div>
+
+    <div><em>Use-cases</em> not HTTP calls</div>
+
+    <div>
+      Think <code class="nowrap em">Send&nbsp;Email</code><br />
+      not <code class="nowrap em">POST /email</code>
+    </div>
+
+    <div>
+      <em>Use-cases</em> not providers
+
+      <notes>Think what happens if your provider is down.</notes>
+    </div>
+
+    <div>
+      <img src="img/strip_implementation.png" alt="" />
+    </div>
+
+    <div><em>Direct&nbsp;calls</em> not proxies</div>
+
+    <div class="sm">
+      iPaaS
+      <notes>
+        Do you know this acronym? Integration Platform as a service.<br />
+        They usually harmonize data inside their service. What if the
+        integration platform goes down?
+      </notes>
+    </div>
+
+    <div class="sm">
+      <s>iPaaS</s>
+
+      <notes
+        >Superface is not it. The calls go directly to providers. If Superface
+        services go down, it doesn't break running apps. Also, we don't need to
+        handle your sensitive information.</notes
+      >
+    </div>
+
+    <div><em>Runtime</em><br />not hardcoding</div>
+
+    <div>Handle API changes <em>without redeploy</em></div>
+
+    <div>
+      <em>Universal&nbsp;client</em> not custom&nbsp;ones
+
+      <notes>
+        At this moment some developer somewhere is implementing a bespoke client
+        for an API</notes
+      >
+    </div>
+
+    <div><em>How</em> does it work?</div>
+
+    <div class="layout">
+      <img src="img/how-superface-works.svg" alt="" style="display: block" />
+    </div>
+
+    <div>Demo</div>
+
+    <div>Where are&nbsp;we heading?</div>
+
+    <div><em class="nowrap">Self-integrating</em> apps</div>
+
+    <div>API Keys <em>management</em></div>
+
+    <div>Capabilities <em>marketplace</em></div>
+
+    <div><em>Universe</em> of&nbsp;capabilities</div>
+
+    <div>
+      <em class="sm">superface.ai/demoday</em>
+    </div>
+  </body>
+</html>
